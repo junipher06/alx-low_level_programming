@@ -1,7 +1,10 @@
 /**
  * _strspn - Gets the length of a prefix substring.
- * @s: The prefix to be measured
- * @accept
+ * @s: The prefix to be searched.
+ * @accept: The prefix to be measured.
+ *
+ * Return: The number of bytes in s which
+ * consists only of bytes from accept.
  **/
 
 unsigned int _strspn(char *s, char *accept)
