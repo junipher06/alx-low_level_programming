@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 /**
- * main -  print the minimum number of coins to
- * make change for an amount of money
- * @argc: number of rguments
+ * main -  print the minimum number of coins to make
+ * change for an amount of money
+ * @argc: number of command line arg
  * @argv: array that holds the command line arg...
- * Return: 0 (Success), 1 (Error)
+ * Return: (0) when successful
  */
 int main(int argc, char **argv)
 {
@@ -25,7 +24,7 @@ int main(int argc, char **argv)
 		if (cents >= 25)
 			cents -= 25;
 		if (cents >= 10)
-			cents -= 5;
+			cents -= 10;
 		if (cents >= 5)
 			cents -= 5;
 		if (cents >= 2)
